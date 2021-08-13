@@ -1,0 +1,32 @@
+{
+  "name": "ether-crowding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "compile": "node -r dotenv/config ethereum/compile.js",
+    "deploy": "node -r dotenv/config ethereum/deploy.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.3",
+    "dotenv": "^10.0.0",
+    "fs-extra": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.0.3",
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "solc": "^0.8.6",
+    "web3": "^1.5.1"
+  },
+  "cacheDirectories": [".next/cache"]
+}
