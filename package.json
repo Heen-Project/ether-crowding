@@ -28,5 +28,7 @@
     "solc": "^0.8.6",
     "web3": "^1.5.1"
   },
-  "cacheDirectories": [".next/cache"]
+  "cacheDirectories": [
+    ".next/cache"
+  ]
 }

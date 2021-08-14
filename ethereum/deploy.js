@@ -2,8 +2,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider')
 const Web3 = require('web3')
 const compiledFactory = require('./build/CampaignFactory.json')
 
-const mnemonic_phrase = process.env.ACCOUNT_MNEMONIC
-const rinkeby_network = process.env.RINKEBY_ENDPOINT
+const mnemonic_phrase = process.env.NEXT_PUBLIC_ACCOUNT_MNEMONIC
+const rinkeby_network = process.env.NEXT_PUBLIC_RINKEBY_ENDPOINT
 
 const provider = new HDWalletProvider({
     mnemonic: {
